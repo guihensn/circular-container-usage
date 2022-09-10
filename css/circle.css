@@ -1,0 +1,111 @@
+.circle{
+    --radius: 10%;
+
+    width: var(--radius);
+    height: 0;
+
+    padding-bottom: var(--radius);
+
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    transition: 1s;
+    transition-property: width, padding-bottom ;
+}
+
+.circle--grow-hover:hover{
+    --new-size: calc(var(--radius)*2);
+
+    width: var(--new-size);
+    padding-bottom: var(--new-size);
+
+    background-color: rgb(6, 207, 184);
+}
+
+.circle--decrease-click:hover{
+    box-shadow: 0px 0px 0px min(0.5vh, 0.5vw) rgb(255, 255, 255);
+}
+
+.circle--decrease-click:active{
+    --new-size: calc(var(--radius)/2.3);
+
+    width: var(--new-size);
+    padding-bottom: var(--new-size);
+
+    transition: 0.5s;
+}
+
+.r-85vh{
+    --radius: min(85vh, 85vw);
+
+    background-color: #bfd7ea;
+}
+
+.r-95vh{
+    --radius: min(95vh, 95vw);
+
+    background-color: transparent;
+    
+    border: none;
+}
+
+.r-100vh{
+    --radius: min(100vh, 100vw);
+
+    border: 1px solid white;
+}
+
+.r-30vh{
+    --radius: min(30vh, 30vw);
+    
+    background-color: #FF5A5F;
+}
+
+.r-3vh, .r-b, .r-m, .r-s{
+    background-color: white;
+}
+.r-3vh{
+    --radius: min(3vh, 3vw);
+}
+
+.r-b{
+    --radius: 30%;
+}
+
+.r-m{
+    --radius: 20%;
+}
+
+.r-s{
+    ---radius: 10%;
+}
+
+.elipse{
+    width: 120px;
+    height: 300px;
+
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+}
+
+.elipse-vertical{
+    width: 30px;
+    height: 10px;
+    background-color: white;
+
+    border-radius: 100%;
+}
+
+.elipse-big{
+    width: 9vw;
+    height: 9vh;
+}
+
+.elipse-horizontal{
+    width: 9vw;
+    height: 9vh;
+    background-color: white;
+
+    border-radius: 100%;
+}

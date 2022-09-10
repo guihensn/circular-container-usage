@@ -1,0 +1,6 @@
+[submodule "git-modules/circular-container"]
+	path = git-modules/circular-container
+	url = https://github.com/guihensn/circular-container.git
+[submodule "modules/circular-container"]
+	path = modules/circular-container
+	url = https://github.com/guihensn/circular-container.git
